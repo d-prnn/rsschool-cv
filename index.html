@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>CV</title>
 </head>
+
 <body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav__items">
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <h1 class="title">Hello,<br> I'm Daria<br> Pronina</h1>
+    <button class="download">Download CV</button>
+    <div class="header__bg"></div>
+    <div class="header__img">
+      <img src="assets/images/photo.jpg" alt="Hello, I'm Daria Pronina">
+    </div>
+  </header>
+  <main>
+    <section class="education" id="education">
+      <h2 class="title__h2 education__title">Education & Skills</h2>
+      <p class="subtitle education__subtitle">Novosibirsk State University</p>
+      <p class="date education__date-1">2016 • 2020</p>
+      <p class="text education__text-1">Psychology, Bachelor.</p>
+      <p class="subtitle education__subtitle">The Rolling Scopes School</p>
+      <p class="date education__date-2">DECEMBER • 2021</p>
+      <p class="text education__text-2">Stage 0, Stage 1.</p>
+      <ul class="skills">
+        <li class="skill">HTML</li>
+        <li class="skill">CSS</li>
+        <li class="skill">JavaScript</li>
+        <li class="skill">Figma</li>
+        <li class="skill">Git</li>
+      </ul>
+    </section>
+    <section class="projects" id="projects">
+      <h2 class="title__h2 projects__title">Projects</h2>
+      <div class="projects__img">
+        <a href="https://rolling-scopes-school.github.io/d-prnn-JSFE2022Q1/shelter/pages/main/" target="_blank" title="Click to go">
+          <img src="assets/images/shelter.png" alt="shelter-project">
+        </a>
+      </div>
+      <h3 class="projects__subtitle">Shelter</h3>
+      <p class="text projects__text">A two-page website for an animal shelter.<br>
+        Two pages are implemented (flex and grid are used).</p>
+    </section>
+    <section class="about" id="about">
+      <h2 class="title__h2 about__title">About</h2>
+      <p class="text about__text">I have been learning something new about the frontend every day for 6 months now, now I study at two programming schools. I chose this direction because I like to achieve goals and see results quickly. I've done several projects using HTML and CSS, and I'm currently learning JavaScript.</p>
+      <p class="text">Project Shelter, even though it was a training project, was very interesting to carry out. I like projects of social initiatives, and I myself am a volunteer of the animal protection movement.</p>
+      <p class="subtitle about__subtitle">Language</p>
+      <ul class="text about__text">
+        <li>Russian - Native</li>
+        <li>English - Intermediate Plus (B1+)</li>
+      </ul>
+      <p class="subtitle about__subtitle">Code Example</p>
+      <pre class="text">
+        <code>function multiply(a, b){
+          return a * b
+        }</code>
+      </pre>
+      <p class="subtitle about__subtitle">Contacts</p>
+      <ul class="text about__text">
+        <li>E-mail: dariaa.pronina@gmail.com</li>
+        <li>Location: Novosibirsk, Russia</li>
+        <li>GitHub: d-prnn</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__git">
+      <a href="https://github.com/d-prnn" target="_blank">
+        <img src="assets/images/github.svg" alt="GitHub" width="90">
+      </a>
+    </div>
+    <time class="text">2022</time>
+    <div class="footer__rss">
+      <a href="https://rs.school/js/" target="_blank">
+        <img src="assets/images/rs_school_js.svg" alt="Rolling Scopes School, Frontend" width="90">
+      </a>
+    </div>
+  </footer>
 </body>
+
 </html>
